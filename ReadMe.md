@@ -27,4 +27,9 @@ Now there are times that we want the user to send data in specific format and of
 
 In This we create a class and define static variables with their datatypes with this we can easily create the request body as an object of this type with these static variables and that act as the fields that should be there inside the request body 
 
+Accessing Headers to access the headers we use the header class in fastapi and use that to access headers 
+ we can also set the status code with the status_code as an argument with status_code value in the @app.<httpmethod>()
 
+ ```
+ @app.get('/',status_code=200)
+ ```
